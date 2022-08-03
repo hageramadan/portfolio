@@ -1,0 +1,75 @@
+#contact{
+    margin-bottom: 10rem;
+}
+.container.contact__container{
+    width:58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+}
+.contact__options{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.contact__option{
+    background: var(--color-bg-variant);
+    padding:1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.contact__option:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+.contact-icon{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.contact__option a{
+    margin-top: 0.7rem;
+    display: inline;
+    font-size: 0.8rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input , textarea{
+    width: 100%;
+    background: transparent;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--color-primary-variant);
+    color: var(--color-white);
+    resize: none;
+}
+
+
+/*======================MEDIAQUARY (MEDUMDEVICES)============================*/
+
+@media  screen and (max-width:1024px) {
+    #contact{
+        margin-bottom: 35rem;
+        margin-top: 12rem;
+    }
+    .container.contact__container{
+        width:80%;
+        display: flex;
+        flex-direction: column;
+      
+    }
+    form{
+        margin-top: 5rem;
+    }
+    
+}
+
+
+/*======================MEDIAQUARY (SMALLDEVICES)============================*/
